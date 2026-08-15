@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.tmp
+.env*
+*.db
+*.sqlite*
+*.log
+backups/
+archives/
+*.zip
+*.tar*
