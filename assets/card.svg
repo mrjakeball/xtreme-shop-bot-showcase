@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">X-TREME Shop Bot</title>
+  <desc id="desc">Monochrome steel project card with parcel route nodes</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090C0F"/><stop offset="1" stop-color="#1A2027"/></linearGradient></defs>
+  <rect width="640" height="260" rx="18" fill="url(#bg)"/>
+  <g transform="translate(470 72)" fill="none" stroke="#94A3B8" stroke-width="2">
+    <path d="M0 18h52v38h74M0 58h30v38h96M0 102h70v-6"/>
+    <g fill="#CBD5E1" stroke="none"><circle cy="18" r="5"/><circle cy="58" r="5"/><circle cy="102" r="5"/><circle cx="126" cy="56" r="6"/><circle cx="126" cy="96" r="6"/></g>
+    <path d="M88 2h50l18 16v70h-68Z" stroke="#E2E8F0" opacity=".6"/>
+    <path d="M138 2v18h18" stroke="#E2E8F0" opacity=".6"/>
+  </g>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+    <text x="34" y="42" fill="#94A3B8" font-size="16" letter-spacing="2">TELEGRAM · ORDER FLOW</text>
+    <text x="34" y="100" fill="#F1F5F9" font-size="34" font-weight="700">X-TREME BOT</text>
+    <text x="36" y="136" fill="#CBD5E1" font-size="18">Collect, calculate, hand off</text>
+    <g font-size="15" fill="#11151A">
+      <rect x="34" y="166" width="80" height="30" rx="6" fill="#E2E8F0"/><text x="49" y="187">PYTHON</text>
+      <rect x="122" y="166" width="90" height="30" rx="6" fill="#E2E8F0"/><text x="137" y="187">AIOGRAM</text>
+      <rect x="220" y="166" width="82" height="30" rx="6" fill="#E2E8F0"/><text x="235" y="187">SQLITE</text>
+    </g>
+  </g>
+  <circle cx="596" cy="168" r="5" fill="#E2E8F0"><animate attributeName="opacity" values=".25;1;.25" dur="2.5s" repeatCount="indefinite"/></circle>
+  <rect x="1" y="1" width="638" height="258" rx="17" fill="none" stroke="#334155" stroke-width="2"/>
+</svg>
+
