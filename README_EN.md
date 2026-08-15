@@ -20,8 +20,8 @@ A Telegram bot for estimating and submitting orders from Poizon and Taobao, from
 | Source | Private; this repository contains only the showcase |
 
 <p align="center">
-  <a href="./assets/screen-details.jpg"><img src="./assets/screen-details.jpg" alt="Item details guide" width="34%" /></a>
-  <a href="./assets/screen-calculation.jpg"><img src="./assets/screen-calculation.jpg" alt="Order cost calculation guide" width="34%" /></a>
+  <a href="./assets/screen-details.jpg"><img src="./assets/screen-details.jpg" alt="Item details guide" width="360" /></a>
+  <a href="./assets/screen-calculation.jpg"><img src="./assets/screen-calculation.jpg" alt="Order cost calculation guide" width="360" /></a>
 </p>
 
 > The gallery contains promotional and instructional materials used by the bot. These are not screenshots of private conversations or customer orders.

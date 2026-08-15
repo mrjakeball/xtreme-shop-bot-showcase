@@ -20,8 +20,8 @@ Telegram-бот для предварительного расчёта и офо
 | Исходники | Приватны; этот репозиторий содержит только витрину |
 
 <p align="center">
-  <a href="./assets/screen-details.jpg"><img src="./assets/screen-details.jpg" alt="Инструкция по заполнению данных товара" width="34%" /></a>
-  <a href="./assets/screen-calculation.jpg"><img src="./assets/screen-calculation.jpg" alt="Схема расчёта стоимости заказа" width="34%" /></a>
+  <a href="./assets/screen-details.jpg"><img src="./assets/screen-details.jpg" alt="Инструкция по заполнению данных товара" width="360" /></a>
+  <a href="./assets/screen-calculation.jpg"><img src="./assets/screen-calculation.jpg" alt="Схема расчёта стоимости заказа" width="360" /></a>
 </p>
 
 > Галерея содержит промо- и инструкционные материалы, используемые ботом. Это не скриншоты личных диалогов или заказов пользователей.
