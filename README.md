@@ -1,104 +1,34 @@
-<p align="center">
-  <img src="./assets/header.svg" alt="X-TREME Shop Bot" width="100%" />
-</p>
+**RU** · [EN](README_EN.md)　 /　 [Профиль](https://github.com/mrjakeball) · [Каталог проектов](https://github.com/mrjakeball/portfolio)
 
-<p align="center">
-  <a href="./README.md"><img src="https://img.shields.io/badge/РУССКИЙ-8B5CF6?style=for-the-badge" alt="Русский" height="29" /></a>
-  &nbsp;
-  <a href="./README_EN.md"><img src="https://img.shields.io/badge/ENGLISH-21262D?style=for-the-badge" alt="English" height="29" /></a>
-</p>
+# X-TREME Shop Bot
 
-<p align="center">
-  <a href="https://t.me/XtremeShopBot"><img src="https://img.shields.io/badge/✈_ОТКРЫТЬ_БОТА-8B5CF6?style=for-the-badge&logo=telegram&logoColor=white" alt="Открыть бота" height="27" /></a>
-  <a href="https://github.com/mrjakeball/portfolio"><img src="https://img.shields.io/badge/📚_ВСЕ_ПРОЕКТЫ-21262D?style=for-the-badge" alt="Все проекты" height="27" /></a>
-  <a href="https://github.com/mrjakeball"><img src="https://img.shields.io/badge/↩_ПРОФИЛЬ-21262D?style=for-the-badge&logo=github&logoColor=white" alt="Профиль" height="27" /></a>
-</p>
+Бот оформляет заявку на покупку с Poizon или Taobao. Покупатель передаёт ссылки и параметры товаров, видит предварительный расчёт и подтверждает состав заказа перед передачей оператору.
 
----
+![Публичные инструкции](assets/social-preview.jpg)
 
-# 📦 X-TREME Shop Bot
+[Открыть бота ↗](https://t.me/XtremeShopBot)
 
-> **Telegram-бот для предварительного расчёта и оформления заказов с китайских торговых платформ.**
+Опубликован в Telegram · Публичная витрина приватного проекта  
+Python 3.11 · aiogram 3 · SQLite · Pillow
 
-<p>
-  <img src="https://img.shields.io/badge/Python_3.11-21262D?style=flat-square&logo=python&logoColor=8B5CF6" alt="Python" />
-  <img src="https://img.shields.io/badge/aiogram_3-21262D?style=flat-square&logo=telegram&logoColor=26A5E4" alt="aiogram" />
-  <img src="https://img.shields.io/badge/SQLite-21262D?style=flat-square&logo=sqlite&logoColor=58A6FF" alt="SQLite" />
-  <img src="https://img.shields.io/badge/Pillow-21262D?style=flat-square&logo=python&logoColor=8B5CF6" alt="Pillow" />
-  <img src="https://img.shields.io/badge/HMAC-21262D?style=flat-square&logo=letsencrypt&logoColor=58A6FF" alt="HMAC" />
-</p>
+## Как заявка доходит до оператора
 
-> ⚠️ Независимый проект. Он не связан с Poizon, Taobao или их владельцами и не является официальным сервисом этих платформ.
+1. **Товар.** Бот собирает ссылку, характеристики и при необходимости изображения. В одну заявку можно добавить несколько товаров.
+2. **Расчёт.** Клиент видит доставку и комиссии до подтверждения. Бот формирует временную PNG-сводку.
+3. **Передача.** Оператор получает структурированную заявку. Состояния диалога организованы через FSM, данные хранятся в SQLite. Для проверки целостности QR-ссылок используется HMAC.
 
-## 🎯 Задача проекта
+В галерее опубликованы инструкции бота. Проект независим от торговых площадок.
 
-Убрать ручной хаос из оформления заказа.
+## Исходные изображения
 
-Пользователь последовательно указывает товар и параметры, получает расчёт, подтверждает данные и передаёт оператору уже структурированную заявку.
+[Инструкция по параметрам товара](assets/screen-details.jpg) · [Инструкция по расчёту](assets/screen-calculation.jpg)
 
-## 📌 Коротко
+<details>
+<summary>Развернуть галерею</summary>
 
-| | |
-| :--- | :--- |
-| 🤖 **Формат** | Telegram-бот |
-| 🚦 **Статус** | Доступен |
-| ✈️ **Бот** | [@XtremeShopBot ↗](https://t.me/XtremeShopBot) |
-| 🧠 **Логика** | FSM-сценарии |
-| 🗄️ **Хранение** | SQLite |
-| 🔒 **Исходники** | Приватные; здесь публичная витрина |
+<a href="assets/screen-details.jpg"><img src="assets/screen-details.jpg" width="560" alt="Инструкция по параметрам товара"></a>
+<a href="assets/screen-calculation.jpg"><img src="assets/screen-calculation.jpg" width="560" alt="Инструкция по расчёту"></a>
 
-## 🖼️ Интерфейс и материалы
+</details>
 
-<p align="center">
-  <a href="./assets/screen-details.jpg"><img src="./assets/screen-details.jpg" alt="Заполнение данных товара" width="420" /></a>
-</p>
-
-<p align="center">
-  <a href="./assets/screen-calculation.jpg"><img src="./assets/screen-calculation.jpg" alt="Расчёт стоимости заказа" width="420" /></a>
-</p>
-
-> 🖼️ Галерея содержит промо- и инструкционные материалы бота. Личные диалоги и реальные заказы пользователей здесь не публикуются.
-
-## 🧭 Маршрут заказа
-
-1. 🔗 пользователь отправляет ссылку на товар;
-2. 📐 указывает необходимые параметры;
-3. 🖼️ при необходимости добавляет изображения;
-4. 🧮 бот рассчитывает стоимость, доставку и комиссии;
-5. ✅ пользователь подтверждает заказ;
-6. 📦 оператор получает структурированную заявку.
-
-## ⚙️ Что реализовано
-
-- пошаговые FSM-сценарии;
-- работа с несколькими товарами;
-- сбор ссылок и характеристик;
-- расчёт доставки и комиссий;
-- временная PNG-сводка;
-- передача сформированной заявки в поддержку.
-
-## 🔐 Целостность и состояние
-
-### 🗄️ SQLite
-
-Состояние длинных пользовательских сценариев не должно теряться между отдельными шагами диалога.
-
-### 🔏 HMAC
-
-Подпись используется для проверки целостности данных, связанных с QR-ссылками.
-
-### 🧹 Публичная витрина
-
-Реальные пользовательские данные, заявки и приватный исходный код в showcase-репозиторий не включены.
-
----
-
-<p align="center">
-  <a href="https://t.me/XtremeShopBot"><img src="https://img.shields.io/badge/✈_ОТКРЫТЬ_X--TREME_SHOP_BOT-8B5CF6?style=for-the-badge&logo=telegram&logoColor=white" alt="Открыть X-TREME Shop Bot" height="30" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/mrjakeball/portfolio"><strong>← Каталог проектов</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/mrjakeball"><strong>Профиль GitHub ↑</strong></a>
-</p>
+[Примечание о проекте](NOTICE.md) · [Профиль](https://github.com/mrjakeball) · [Каталог проектов](https://github.com/mrjakeball/portfolio)
