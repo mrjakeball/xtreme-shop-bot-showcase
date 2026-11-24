@@ -23,9 +23,11 @@ Python 3.11 · aiogram 3 · SQLite · Pillow
 
 The gallery reproduces the bot’s public instruction sheets. This is an independent project.
 
-## Original images
+## What the buyer can review before confirming
 
-[Product details guide](assets/screen-details.jpg) · [Cost breakdown guide](assets/screen-calculation.jpg)
+**[Item details](assets/screen-details.jpg)** · The guide shows what to include with the product link so the operator can distinguish between variants of the same item.
+
+**[How the estimate works](assets/screen-calculation.jpg)** · The second sheet explains the parts of the estimate. Open it at full size to review the calculation before the request reaches the operator.
 
 <details>
 <summary>View the gallery</summary>
