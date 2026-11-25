@@ -10,7 +10,7 @@ A Telegram bot for Poizon and Taobao purchase requests. A customer submits produ
 
 ![Public instruction sheets](assets/social-preview.jpg)
 
-<a href="https://t.me/XtremeShopBot"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/actions/bot-en.svg" height="36" alt="Open the bot"></a>
+<a href="https://t.me/XtremeShopBot"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/links/bot-en.svg" height="36" alt="Open the bot"></a>
 
 Published on Telegram · Public showcase of a private project  
 Python 3.11 · aiogram 3 · SQLite · Pillow
