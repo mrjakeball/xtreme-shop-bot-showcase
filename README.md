@@ -10,7 +10,7 @@
 
 ![Публичные инструкции](assets/social-preview.jpg)
 
-[Открыть бота ↗](https://t.me/XtremeShopBot)
+<a href="https://t.me/XtremeShopBot"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/actions/bot-ru.svg" height="36" alt="Открыть бота"></a>
 
 Опубликован в Telegram · Публичная витрина приватного проекта  
 Python 3.11 · aiogram 3 · SQLite · Pillow
