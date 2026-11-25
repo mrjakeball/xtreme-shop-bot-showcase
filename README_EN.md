@@ -1,7 +1,7 @@
 <p>
-<a href="README.md"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/ui/ru-off.svg" height="32" alt="Русский"></a>
-<a href="README_EN.md"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/ui/en-on.svg" height="32" alt="English · selected"></a>
-<a href="https://github.com/mrjakeball/portfolio/blob/main/README_EN.md"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/ui/catalog-en.svg" height="32" alt="Project catalogue"></a>
+<a href="README.md"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/navigation/ru-off.svg" height="44" alt="Русский"></a>
+<a href="README_EN.md"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/navigation/en-on.svg" height="44" alt="English · selected"></a>
+<a href="https://github.com/mrjakeball/portfolio/blob/main/README_EN.md"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/navigation/catalog-en.svg" height="44" alt="Project catalogue"></a>
 </p>
 
 # X-TREME Shop Bot
@@ -10,7 +10,7 @@ A Telegram bot for Poizon and Taobao purchase requests. A customer submits produ
 
 ![Public instruction sheets](assets/social-preview.jpg)
 
-<a href="https://t.me/XtremeShopBot"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/links/bot-en.svg" height="36" alt="Open the bot"></a>
+<a href="https://t.me/XtremeShopBot"><img src="https://raw.githubusercontent.com/mrjakeball/mrjakeball/main/assets/buttons/bot-en.svg" height="36" alt="Open the bot"></a>
 
 Published on Telegram · Public showcase of a private project  
 Python 3.11 · aiogram 3 · SQLite · Pillow
